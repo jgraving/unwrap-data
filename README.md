@@ -75,6 +75,21 @@ Pre-approach vs post-approach predator-escape bearings (the input to
   original ordering). Split losslessly from `zebra_bearings.csv`; the files
   reassemble to exactly the original 3,897,536 rows.
 
+## `goldschtein_bats/` — bat homing-tracking data
+
+Raw data for `unwrap/goldshtein_bats.ipynb` — post-localization homing
+tracks of wild bats between their roost and a distant feeding site, with
+each track tagged with a destination (roost vs lake). Columns are in the
+original tracking-export layout; see the notebook for the coordinate
+transform to web-mercator.
+
+- `goldschtein_bats/dataAll_trackDest.xls` — the main input: raw
+  post-localization tracking tracks with a per-track destination
+  (read via `pd.read_excel`).
+- `goldschtein_bats/all_bats_info.xls` — per-bat metadata table.
+- `goldschtein_bats/agamon_hula_lake_outline.geojson` — shoreline polygon
+  of the Agamon (Hula) lake used as the natural-homing destination.
+
 ## Notes
 
 - All files are read-only research data; do not modify in place.
