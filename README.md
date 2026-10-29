@@ -42,9 +42,31 @@ df = pd.concat([pd.read_parquet(f) for f in files], ignore_index=True)
   local neighbour density), `groups` (int; trial grouping).
 - 107 files, 53,226,544 rows in total.
 
+## `beetle_security_light/` — beetle security-light preference data
+
+Beetles' heading in a light-on vs. light-off apparatus, from the 2019
+security-light experiment. Single tab-separated file (one row per beetle,
+trial, and stimulus presentation):
+
+- `beetle_security_light/SecurityLightBergsig.txt`
+  (`Experiment`, `Beetle`, `Trial`, `Heading` in degrees).
+
+The `unwrap/beetles.ipynb` notebook loads it, converts headings to radians,
+and refits a circular mixture model of light preference per beetle.
+
+## `zebra_bearings/` — zebra escape-bearings data
+
+Preprocessed block-level bearings for zebras before and after predator
+approach (the input to `unwrap/zebra_escape.ipynb`; per-block aggregation is
+already done here):
+
+- `zebra_bearings/zebra_bearings_blocks.parquet`
+  (`Track` str, `Observation` str, `Condition` str
+  {`pre-approach`, `post-approach` ordered}, `HeadingRadians` float64,
+  `PostStimulus` int). 5,417 rows.
+
 ## Notes
 
 - All files are read-only research data; do not modify in place.
 - Originals for the directional experiment are also released at
   [zenodo.org/doi/10.5281/zenodo.14353283](https://doi.org/10.5281/zenodo.14353283).
- origin/main
