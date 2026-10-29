@@ -56,14 +56,24 @@ and refits a circular mixture model of light preference per beetle.
 
 ## `zebra_bearings/` — zebra escape-bearings data
 
-Preprocessed block-level bearings for zebras before and after predator
-approach (the input to `unwrap/zebra_escape.ipynb`; per-block aggregation is
-already done here):
+Pre-approach vs post-approach predator-escape bearings (the input to
+`unwrap/zebra_escape.ipynb`):
 
-- `zebra_bearings/zebra_bearings_blocks.parquet`
-  (`Track` str, `Observation` str, `Condition` str
-  {`pre-approach`, `post-approach` ordered}, `HeadingRadians` float64,
-  `PostStimulus` int). 5,417 rows.
+- `zebra_bearings/zebra_bearings_blocks.parquet` — preprocessed block bearings
+  (300-frame mean direction per track and condition):
+  `Track` str, `Observation` str, `Condition` ordered str
+  {`pre-approach`, `post-approach`}, `HeadingRadians` float64,
+  `PostStimulus` int. 5,417 rows (observation088, all tracks with both
+  conditions).
+  This is an *exported view* of the raw data below — it can be reproduced
+  exactly from `zebra_bearings/raw/`.
+- `zebra_bearings/raw/*.parquet` — the raw per-frame bearings, one file per
+  tracked animal (59 files, 4 zebras, 3,897,536 frames). Columns:
+  `observation` (str), `track_number` (str), `frame` (int),
+  `compass_bearing` (float, degrees), `pre_scare` (bool), `row_index` (int,
+  the row number in the original CSV; needed to reassemble the exact
+  original ordering). Split losslessly from `zebra_bearings.csv`; the files
+  reassemble to exactly the original 3,897,536 rows.
 
 ## Notes
 
