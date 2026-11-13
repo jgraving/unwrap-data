@@ -1,0 +1,79 @@
+{
+  "extra": {
+    "draws": 2000,
+    "model": "beetles_treatment",
+    "seed": 42,
+    "target_accept": 0.9,
+    "tune": 2000
+  },
+  "n_posterior_vars": 12,
+  "posterior_shapes": {
+    "1|Individual": [
+      4,
+      2000,
+      10
+    ],
+    "1|Individual_kappa": [
+      4,
+      2000
+    ],
+    "Intercept": [
+      4,
+      2000
+    ],
+    "Light": [
+      4,
+      2000
+    ],
+    "Light|Individual": [
+      4,
+      2000,
+      10
+    ],
+    "Light|Individual_kappa": [
+      4,
+      2000
+    ],
+    "kappa_1|Individual": [
+      4,
+      2000,
+      10
+    ],
+    "kappa_1|Individual_sigma": [
+      4,
+      2000
+    ],
+    "kappa_Intercept": [
+      4,
+      2000
+    ],
+    "kappa_Light": [
+      4,
+      2000
+    ],
+    "kappa_Light|Individual": [
+      4,
+      2000,
+      10
+    ],
+    "kappa_Light|Individual_sigma": [
+      4,
+      2000
+    ]
+  },
+  "posterior_vars": [
+    "1|Individual",
+    "1|Individual_kappa",
+    "Intercept",
+    "Light",
+    "Light|Individual",
+    "Light|Individual_kappa",
+    "kappa_1|Individual",
+    "kappa_1|Individual_sigma",
+    "kappa_Intercept",
+    "kappa_Light",
+    "kappa_Light|Individual",
+    "kappa_Light|Individual_sigma"
+  ],
+  "sha256": "f985f7e55f6a28ffb9d6ec544c624b03d8195b7447ec575a43a82351247bf5d1"
+}

@@ -1,0 +1,79 @@
+{
+  "extra": {
+    "draws": 1000,
+    "model": "zebra_escape",
+    "seed": 42,
+    "target_accept": 0.8,
+    "tune": 2000
+  },
+  "n_posterior_vars": 12,
+  "posterior_shapes": {
+    "1|Track": [
+      4,
+      1000,
+      18
+    ],
+    "1|Track_kappa": [
+      4,
+      1000
+    ],
+    "Intercept": [
+      4,
+      1000
+    ],
+    "PostStimulus": [
+      4,
+      1000
+    ],
+    "PostStimulus|Track": [
+      4,
+      1000,
+      18
+    ],
+    "PostStimulus|Track_kappa": [
+      4,
+      1000
+    ],
+    "kappa_1|Track": [
+      4,
+      1000,
+      18
+    ],
+    "kappa_1|Track_sigma": [
+      4,
+      1000
+    ],
+    "kappa_Intercept": [
+      4,
+      1000
+    ],
+    "kappa_PostStimulus": [
+      4,
+      1000
+    ],
+    "kappa_PostStimulus|Track": [
+      4,
+      1000,
+      18
+    ],
+    "kappa_PostStimulus|Track_sigma": [
+      4,
+      1000
+    ]
+  },
+  "posterior_vars": [
+    "1|Track",
+    "1|Track_kappa",
+    "Intercept",
+    "PostStimulus",
+    "PostStimulus|Track",
+    "PostStimulus|Track_kappa",
+    "kappa_1|Track",
+    "kappa_1|Track_sigma",
+    "kappa_Intercept",
+    "kappa_PostStimulus",
+    "kappa_PostStimulus|Track",
+    "kappa_PostStimulus|Track_sigma"
+  ],
+  "sha256": "0c01dd8463651a817f90776e1089928e84b05a594bf1f86ad7e08bbdfe7ec71b"
+}

@@ -1,0 +1,56 @@
+{
+  "extra": {
+    "chains": 4,
+    "draws": 1000,
+    "model": "locust_density_screen",
+    "seed": 123,
+    "target_accept": 0.9,
+    "tune": 1000
+  },
+  "n_posterior_vars": 8,
+  "posterior_shapes": {
+    "Intercept": [
+      4,
+      1000
+    ],
+    "kappa_Intercept": [
+      4,
+      1000
+    ],
+    "kappa_t_density": [
+      4,
+      1000
+    ],
+    "kappa_t_density:t_order": [
+      4,
+      1000
+    ],
+    "kappa_t_order": [
+      4,
+      1000
+    ],
+    "t_density": [
+      4,
+      1000
+    ],
+    "t_density:t_order": [
+      4,
+      1000
+    ],
+    "t_order": [
+      4,
+      1000
+    ]
+  },
+  "posterior_vars": [
+    "Intercept",
+    "kappa_Intercept",
+    "kappa_t_density",
+    "kappa_t_density:t_order",
+    "kappa_t_order",
+    "t_density",
+    "t_density:t_order",
+    "t_order"
+  ],
+  "sha256": "063997d57f25d5264adf3fe10860b18175ef64fff8fbd969ea3d8d74a2ef75d6"
+}

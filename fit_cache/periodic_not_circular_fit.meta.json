@@ -1,0 +1,50 @@
+{
+  "extra": {
+    "draws": 1000,
+    "model": "periodic_not_circular",
+    "seed": 42,
+    "stripped": [
+      "alpha_beta",
+      "beta_beta",
+      "mu",
+      "phi"
+    ],
+    "tune": 1000
+  },
+  "n_posterior_vars": 6,
+  "posterior_shapes": {
+    "mu_alpha": [
+      4,
+      1000
+    ],
+    "mu_cos": [
+      4,
+      1000
+    ],
+    "mu_sin": [
+      4,
+      1000
+    ],
+    "phi_alpha": [
+      4,
+      1000
+    ],
+    "phi_cos": [
+      4,
+      1000
+    ],
+    "phi_sin": [
+      4,
+      1000
+    ]
+  },
+  "posterior_vars": [
+    "mu_alpha",
+    "mu_cos",
+    "mu_sin",
+    "phi_alpha",
+    "phi_cos",
+    "phi_sin"
+  ],
+  "sha256": "5c2a7ce25f70a62889140a05b098c7941556bd2de6a37600233c9c720624d728"
+}

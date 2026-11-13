@@ -1,0 +1,75 @@
+{
+  "extra": {
+    "chains": 4,
+    "draws": 1000,
+    "init": "jitter+adapt_diag",
+    "model": "locust_density_hier",
+    "omit_offsets": false,
+    "seed": 123,
+    "target_accept": 0.9,
+    "tune": 2000
+  },
+  "n_posterior_vars": 11,
+  "posterior_shapes": {
+    "Intercept": [
+      4,
+      1000
+    ],
+    "kappa_1|animal_id": [
+      4,
+      1000,
+      440
+    ],
+    "kappa_1|animal_id_offset": [
+      4,
+      1000,
+      440
+    ],
+    "kappa_1|animal_id_sigma": [
+      4,
+      1000
+    ],
+    "kappa_Intercept": [
+      4,
+      1000
+    ],
+    "kappa_t_density": [
+      4,
+      1000
+    ],
+    "kappa_t_density:t_order": [
+      4,
+      1000
+    ],
+    "kappa_t_order": [
+      4,
+      1000
+    ],
+    "t_density": [
+      4,
+      1000
+    ],
+    "t_density:t_order": [
+      4,
+      1000
+    ],
+    "t_order": [
+      4,
+      1000
+    ]
+  },
+  "posterior_vars": [
+    "Intercept",
+    "kappa_1|animal_id",
+    "kappa_1|animal_id_offset",
+    "kappa_1|animal_id_sigma",
+    "kappa_Intercept",
+    "kappa_t_density",
+    "kappa_t_density:t_order",
+    "kappa_t_order",
+    "t_density",
+    "t_density:t_order",
+    "t_order"
+  ],
+  "sha256": "af8df700a42354c59fa673e8635d25e4c11f038f404cdb9513aaf5b853176498"
+}
