@@ -1,0 +1,59 @@
+{
+  "extra": {
+    "draws": 1000,
+    "model": "locust_direction_unimodal",
+    "seed": 42,
+    "target_accept": 0.9,
+    "tune": 2000
+  },
+  "n_posterior_vars": 8,
+  "posterior_shapes": {
+    "kappa": [
+      4,
+      1000,
+      52
+    ],
+    "kappa_log": [
+      4,
+      1000,
+      52
+    ],
+    "kappa_log_pop": [
+      4,
+      1000
+    ],
+    "kappa_sigma": [
+      4,
+      1000
+    ],
+    "mu": [
+      4,
+      1000,
+      52
+    ],
+    "mu_kappa": [
+      4,
+      1000
+    ],
+    "mu_pop": [
+      4,
+      1000
+    ],
+    "mu_raw": [
+      4,
+      1000,
+      52
+    ]
+  },
+  "posterior_vars": [
+    "kappa",
+    "kappa_log",
+    "kappa_log_pop",
+    "kappa_sigma",
+    "mu",
+    "mu_kappa",
+    "mu_pop",
+    "mu_raw"
+  ],
+  "sha256": "4ecfa5de6026e3165c383d0eed7a5edea7b28831e9142d976a7bb8d785740e4a"
+}

@@ -1,0 +1,120 @@
+{
+  "extra": {
+    "draws": 1000,
+    "model": "locust_direction_bimodal",
+    "seed": 42,
+    "target_accept": 0.9,
+    "tune": 2000
+  },
+  "n_posterior_vars": 17,
+  "posterior_shapes": {
+    "kappa": [
+      4,
+      1000,
+      52,
+      2
+    ],
+    "kappa_log_pop_unsorted": [
+      4,
+      1000,
+      2
+    ],
+    "kappa_log_unsorted": [
+      4,
+      1000,
+      52,
+      2
+    ],
+    "kappa_pop": [
+      4,
+      1000,
+      2
+    ],
+    "kappa_sigma": [
+      4,
+      1000,
+      2
+    ],
+    "kappa_sigma_unsorted": [
+      4,
+      1000,
+      2
+    ],
+    "logit_sigma": [
+      4,
+      1000
+    ],
+    "mu": [
+      4,
+      1000,
+      52,
+      2
+    ],
+    "mu_kappa": [
+      4,
+      1000,
+      2
+    ],
+    "mu_kappa_unsorted": [
+      4,
+      1000,
+      2
+    ],
+    "mu_pop": [
+      4,
+      1000,
+      2
+    ],
+    "mu_pop_unsorted": [
+      4,
+      1000,
+      2
+    ],
+    "mu_unsorted": [
+      4,
+      1000,
+      52,
+      2
+    ],
+    "weights": [
+      4,
+      1000,
+      52,
+      2
+    ],
+    "weights_logit_pop": [
+      4,
+      1000
+    ],
+    "weights_logit_unsorted": [
+      4,
+      1000,
+      52
+    ],
+    "weights_pop": [
+      4,
+      1000,
+      2
+    ]
+  },
+  "posterior_vars": [
+    "kappa",
+    "kappa_log_pop_unsorted",
+    "kappa_log_unsorted",
+    "kappa_pop",
+    "kappa_sigma",
+    "kappa_sigma_unsorted",
+    "logit_sigma",
+    "mu",
+    "mu_kappa",
+    "mu_kappa_unsorted",
+    "mu_pop",
+    "mu_pop_unsorted",
+    "mu_unsorted",
+    "weights",
+    "weights_logit_pop",
+    "weights_logit_unsorted",
+    "weights_pop"
+  ],
+  "sha256": "145afc211aa3f218aab69fd28bbc6faa040cbaa104aa786025698f6f8de64827"
+}

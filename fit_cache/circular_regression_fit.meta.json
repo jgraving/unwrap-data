@@ -1,0 +1,36 @@
+{
+  "extra": {
+    "chains": 4,
+    "draws": 500,
+    "model": "circular_regression",
+    "seed": 42,
+    "target_accept": 0.9,
+    "tune": 500
+  },
+  "n_posterior_vars": 4,
+  "posterior_shapes": {
+    "Intercept": [
+      4,
+      500
+    ],
+    "kappa_Intercept": [
+      4,
+      500
+    ],
+    "kappa_x": [
+      4,
+      500
+    ],
+    "x": [
+      4,
+      500
+    ]
+  },
+  "posterior_vars": [
+    "Intercept",
+    "kappa_Intercept",
+    "kappa_x",
+    "x"
+  ],
+  "sha256": "c38d36fc269a699268786770bab8b076251d8af8bf147afd0b6ef2f46055a69c"
+}
