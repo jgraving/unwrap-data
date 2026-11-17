@@ -76,7 +76,8 @@ Pre-approach vs post-approach predator-escape bearings (the input to
   reassemble to exactly the original 3,897,536 rows.
 - `zebra_bearings/postures/observation088-{0..17}.parquet` — posture keypoint
   positions for the 18 animals of flight `observation088`, the input to the
-  map panels of `unwrap/zebra_map.ipynb`. The original
+  map panels of `unwrap/notebooks/zebra_escape.ipynb` (its "Map the escape
+  response onto the ground" section). The original
   `observation088-postures.npy` array `(18, 90732, 10, 2)` (UTM 37N meters)
   is split per tracked animal into wide float64 parquets
   (`frame`, `track_number`, `kp0_x..kp9_y`); the split was verified
