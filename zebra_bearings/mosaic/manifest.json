@@ -1,0 +1,74 @@
+{
+ "format": "zebra-mosaic-tiles-v1",
+ "source": "riverside4_5_11_merge_transparent_mosaic_group1.tif",
+ "crs": {
+  "epsg": 32637,
+  "wkt": "PROJCS[\"WGS 84 / UTM zone 37N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",39],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32637\"]]"
+ },
+ "pixel_size_m": 0.027070000000000004,
+ "extent": {
+  "left": 267510.0,
+  "right": 267694.99638,
+  "bottom": 37275.0012,
+  "top": 37785.0
+ },
+ "n_rows": 18840,
+ "n_cols": 6834,
+ "dtype": "uint8",
+ "bands": [
+  "R",
+  "G",
+  "B",
+  "A"
+ ],
+ "tiles": [
+  {
+   "file": "tile_000.png",
+   "row0": 0,
+   "nrows": 2400,
+   "bytes": 28499367
+  },
+  {
+   "file": "tile_001.png",
+   "row0": 2400,
+   "nrows": 2400,
+   "bytes": 28572339
+  },
+  {
+   "file": "tile_002.png",
+   "row0": 4800,
+   "nrows": 2400,
+   "bytes": 27980102
+  },
+  {
+   "file": "tile_003.png",
+   "row0": 7200,
+   "nrows": 2400,
+   "bytes": 30054417
+  },
+  {
+   "file": "tile_004.png",
+   "row0": 9600,
+   "nrows": 2400,
+   "bytes": 27793434
+  },
+  {
+   "file": "tile_005.png",
+   "row0": 12000,
+   "nrows": 2400,
+   "bytes": 25748999
+  },
+  {
+   "file": "tile_006.png",
+   "row0": 14400,
+   "nrows": 2400,
+   "bytes": 26425900
+  },
+  {
+   "file": "tile_007.png",
+   "row0": 16800,
+   "nrows": 2040,
+   "bytes": 22777594
+  }
+ ]
+}
