@@ -74,6 +74,29 @@ Pre-approach vs post-approach predator-escape bearings (the input to
   the row number in the original CSV; needed to reassemble the exact
   original ordering). Split losslessly from `zebra_bearings.csv`; the files
   reassemble to exactly the original 3,897,536 rows.
+- `zebra_bearings/postures/observation088-{0..17}.parquet` — posture keypoint
+  positions for the 18 animals of flight `observation088`, the input to the
+  map panels of `unwrap/zebra_map.ipynb`. The original
+  `observation088-postures.npy` array `(18, 90732, 10, 2)` (UTM 37N meters)
+  is split per tracked animal into wide float64 parquets
+  (`frame`, `track_number`, `kp0_x..kp9_y`); the split was verified
+  element-for-element against the npy (`equal_nan`) by
+  `tools/prepare_zebra_map_data.py` in the `unwrap` repo. Keypoint 0 is the
+  animal centre (its trajectory); keypoints 8 (rump) and 3 (shoulder) are the
+  body axis whose bearings are already in `raw/`.
+- `zebra_bearings/mosaic/manifest.json` + `tile_{000..007}.png` — a
+  native-resolution (0.02707 m/px), lossless RGBA crop of the aerial
+  orthomosaic `riverside4_5_11_merge_transparent_mosaic_group1.tif`
+  (38645x44856 px, UTM 37N, EPSG:32637) covering the escape-map panel
+  window (x 267510-267695, y 37275-37785 m), stored as PNG row-strips with
+  the extent, CRS and per-tile row offsets in the manifest so the loader can
+  stitch (and window) without GDAL. Each PNG decodes to exactly the pixels
+  written (verified). Produced by `tools/prepare_zebra_map_data.py`.
+- `zebra_bearings/scare_frames.csv` / `zebra_bearings/spp_ids.csv` — the two
+  original metadata side-files (stimulus frame per observation; species per
+  track) that the bearing preprocessing consumed. The processed `pre_scare`
+  / condition columns already encode their effect; these are kept for
+  provenance and to re-derive bearings from postures.
 
 ## `goldschtein_bats/` — bat homing-tracking data
 
